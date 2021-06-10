@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AED_Main_MasterPage.master.cs" Inherits="AED_Main_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <title>UEMEd e-Declaration</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <%--<link href="Content/font-awesome.min.css" rel="stylesheet" />--%>
+    <link href="Content/all.min.css" rel="stylesheet" />
+    <link href="Content/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body class="bg-light">
+    <form id="formEdeclarationMP" runat="server">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <asp:ScriptManager ID="ScriptManagerCros" runat="server">
+    <Scripts>
+        <asp:ScriptReference Path="Scripts/jquery-3.4.1.min.js" />
+        <asp:ScriptReference Path="Scripts/popper.min.js" />
+        <asp:ScriptReference Path="Scripts/bootstrap.min.js" />
+        <asp:ScriptReference Path="Scripts/moment.min.js" />
+        <asp:ScriptReference Path="Scripts/tempusdominus-bootstrap-4.min.js" />
+        
+    </Scripts>
+    </asp:ScriptManager>
+
+    <div class="container">
+
+    <img src="Img/coi.png" class="img-fluid"/>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="menulist" runat="server" class="navbar-nav mr-auto">
+                <li id="menu11" runat="server" class="nav-item">
+                    <a class="nav-link form-control-sm" href="ED_Main_Page.aspx">Home</a>
+                </li>
+                <li id="menu12" runat="server" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle form-control-sm" href="#" id="navDeclare" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Form</a>
+                    <div class="dropdown-menu" aria-labelledby="navDeclare">
+                        <a id="menu121" runat="server" class="dropdown-item form-control-sm" href="ED_User_Declare_COI.aspx">Online Declaration Form</a>
+                        <a id="menu122" runat="server" class="dropdown-item form-control-sm" href="ED_User_Declare_COI_M.aspx">Manual Declaration Form</a>
+                        <a id="menu123" runat="server" class="dropdown-item form-control-sm" href="ED_User_Declare_COI_List.aspx">View Declaration Form</a>
+                    </div>
+                </li>
+                <li id="menu13" runat="server" class="nav-item">
+                    <a class="nav-link form-control-sm" href="ED_User_Review_COI.aspx">Review</a>
+                </li>
+                <li id="menu14" runat="server" class="nav-item">
+                    <a class="nav-link form-control-sm" href="ED_Admin_Dashboard.aspx">Dashboard</a>
+                </li>
+                <li id="menu15" runat="server" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle form-control-sm" href="#" id="navAdmin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrator</a>
+                    <div class="dropdown-menu" aria-labelledby="navAdmin">
+                        <a id="menu151" runat="server" class="dropdown-item form-control-sm" href="ED_Admin_UserDetails_Upload.aspx">Upload Staff Listing</a>
+                        <a id="menu152" runat="server" class="dropdown-item form-control-sm" href="ED_Admin_UserDetails_Update_List.aspx">Update Staff Information</a>
+                        <a id="menu153" runat="server" class="dropdown-item form-control-sm" href="ED_Admin_Action_COI.aspx">Pending Action</a>
+                        <a id="menu154" runat="server" class="dropdown-item form-control-sm" href="ED_Admin_Review_COI.aspx">Pending Verification</a>
+                        <a id="menu155" runat="server" class="dropdown-item form-control-sm" href="ED_Admin_Search_COI.aspx">Search Declaration Forms</a>
+                    </div>
+                </li>
+                <li id="menu16" runat="server" class="nav-item">
+                    <a class="nav-link form-control-sm" href="#">User Manual</a>
+                </li>
+            </ul>
+            <asp:LinkButton ID="btnLogout" runat="server" CssClass="btn btn-outline-light btn-sm my-2 my-sm-0" OnClick="btnLogout_Click">Logout</asp:LinkButton>
+        </div>
+    </nav>
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    
+
+    </form>
+</body>
+</html>
