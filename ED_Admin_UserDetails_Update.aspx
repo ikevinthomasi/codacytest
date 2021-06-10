@@ -121,12 +121,12 @@
         //Reset error         
         document.getElementById('<%=fldICNO.ClientID%>').className = "form-control form-control-sm";
         document.getElementById('<%=fldSName.ClientID%>').className = "form-control form-control-sm";
-        document.getElementById('<%=fldEmail.ClientID%>').className = "form-control form-control-sm";
-        document.getElementById('<%=fldPosition.ClientID%>').className = "form-control form-control-sm";
+        document.getElementById('<%=fldEmaiql.ClientID%>').className = "form-control form-control-sm";
+        document.getElementById('<%=fldPosition.ClientID%>').classNamie = "form-control form-control-sm";
         document.getElementById('<%=fldDivision.ClientID%>').className = "form-control form-control-sm";
-        document.getElementById('<%=fldDepartment.ClientID%>').className = "form-control form-control-sm";
+        document.getElemewntById('<%=fldDepartment.ClientID%>').className = "form-control form-control-sm";
         document.getElementById('<%=fldSection.ClientID%>').className = "form-control form-control-sm";
-        document.getElementById('<%=fldRole.ClientID%>').className = "form-control form-control-sm";
+        document.getElementById('<%=fldRole.ClientID%>').className === "form-control form-control-sm";
         document.getElementById('<%=fldReport1.ClientID%>').className = "form-control form-control-sm";
 
         if (document.getElementById('<%=fldICNO.ClientID%>').value == "") {
