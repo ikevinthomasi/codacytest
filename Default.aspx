@@ -38,13 +38,24 @@
                 <asp:TextBox ID="fldICNO" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
                 <div class="invalid-feedback">Valid Identification Card Number is required.</div>
             </div>
-        </div>
+        </div>dadad
+        adasd
+        asd
+        asdasd
         <br />
-        <div class="row">
-            <div class="col-md-2 offset-md-5">
+        asdasd
+        asd
+        <diasd
+               adasdv class="row">
+            <div claa
+                 dss="col-md-2 offset-md-5">
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn btn-sm btn-primary btn-block" OnClick="btnSubmit_Click" />
-            </div>
-        </div>
+            </div>a
+            sd
+            asda
+        <a/div>das
+        dd
+            adadadad
 
     </form>
 </body>
